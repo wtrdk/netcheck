@@ -8,7 +8,7 @@ fi
 
 wget -q --tries=10 --timeout=20 --spider http://google.com
 if [[ $? -eq 0 ]]; then
-        echo "$(date +%Y-%m-%d_%H:%M:%S)        Online" | tee -a "$global_log_file"
+        echo "$(date +%Y-%m-%d_%H:%M:%S)        Online" 
 else
-        echo "$(date +%Y-%m-%d_%H:%M:%S)        Offline" | tee -a "$global_log_file"
+        echo "$(date +%Y-%m-%d_%H:%M:%S)        Offline" >> "$global_log_file"
 fi
