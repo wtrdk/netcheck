@@ -1,6 +1,6 @@
 #!/bin/bash
 
-global_log_file="$HOME/Dropbox/Logs/netcheck_global_$(date +%Y-%m-%d).log"
+global_log_file="$HOME/Dropbox/Logs/Netcheck/netcheck_global_$(date +%Y-%m-%d).log"
 
 if [ ! -f "$global_log_file" ]; then
     touch "$global_log_file"
