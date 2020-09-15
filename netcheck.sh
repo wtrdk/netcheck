@@ -1,6 +1,6 @@
 #!/bin/bash
 
-global_log_file="$HOME/Dropbox/Logs/Netcheck/netcheck_global_$(date +%Y-%m-%d).log"
+global_log_file="$HOME/Dropbox/Logs/Netcheck/netcheck.log"
 nice_date="+%Y-%m-%d %H:%M:%S"
 
 if [ ! -f "$global_log_file" ]; then
